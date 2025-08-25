@@ -35,12 +35,6 @@
             </div>
         </div>
 
-        <div class="home-sci">
-            <a href="https://github.com/bhargavikakarla00183"><i class='bx bxl-github' ></i></a>
-            <a href="https://www.instagram.com/bhargavi_chowdaryy_?igsh=djFmZmdjYTMyaW9s"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://www.linkedin.com/in/klbchowdary/"><i class='bx bxl-linkedin' ></i></a>
-        </div>
-
         <div class="img-cont">
             <img class="profile" src="./passphoto.jpg" alt="Profile">
         </div>
@@ -64,53 +58,62 @@
         <button class="skill-btn"><i class='bx bxl-python'></i> Python</button>
     </div>
 </section>
-    <!-- Projects -->
-    <section class="section" id="projects">
-        <h1 class="heading">My <span> Projects</span></h1>
-        <div class="projects-container">
-            <div class="projects-row">
-                <h3>Plant Disease Detection</h3>
-                    <p>Built an Deep Learning Model to identify various
-                        Plant Diseases by using Architectures - VGG19,
-                        LeNet, Resnet, VGG16.</p>
-            </div>
 
-            <div class="projects-row">
-                <h3>Guide for Blind</h3>
-                <p>Made an project for Blind people using Raspberry
+ <section class="section" id="projects">
+ <h1 class="heading">My <span> Projects</span></h1>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Tic-Tac-Toe Game using Java</h3>
+      <ul>
+        <li>Implemented with a graphical user interface and core object oriented principles.</li>
+        <li>It uses a Java Frame as a main window and Java panel for game board.</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Speech To Text Generation</h3>
+      <ul>
+        <li>Using DeepSpeech 2.0 deeplearning architecture</li>
+        <li>Built a text generation from recognized speech</li>
+        <li>Integrated tools like Google Speech Recognition API / CMU Sphinx / DeepSpeech (update based on your tech stack) to process and transcribe audio inputs.s</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>E-commerce Platform</h3>
+      <ul>
+        <li>Implemented product listings, shopping cart, and user authentication without database.</li>
+        <li>Using javascript list as a temporary database for user authentication (sign up and login)</li>
+      </ul>
+    </div>
+     <div class="project-card">
+      <h3>Guide for Blind</h3>
+      <ul>
+        <li>Made an project for Blind people using Raspberry
                     Pi which scans the text from images and convert it
-                    to speech.</p>
-            </div>
-
-            <div class="projects-row">
-                <h3>Data Visualization</h3>
-                    <p>Took a survey and collected the responses then using  PYTHON libraries(MathPlotLib,Seaborn) Visualizations are done.</p>
-            </div>
-
-            <div class="projects-row">
-                <h3>Frontend of Online Shopping Website</h3>
-                    <p>Designed the front-end part of a shopping website 
-                        with a responsive web design using
-                        HTML, CSS and JavaScript</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section
-    <section class="resume" id="resume">
-        <h1 class="heading">My <span>Resume</span></h1>
-        <div class="container">
-            <h2>Take a Look at My Resume :)</h2>
-            <h3><a href="https://drive.google.com/file/d/1azAq1DcgLwZdyoyGGENDtP2SBGKbFF9I/view?usp=sharing"><i class='bx bxs-hand-right' ></i>Click Here!<i class='bx bxs-hand-left' ></i></a></h3>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
+                    to speech</li>
+        <li>Designed a portable, low-cost prototype to promote mobility and independence among the visually impaired.</li>
+      </ul>
+    </div>
+     <div class="project-card">
+      <h3>Plant Disease Detection Using Deep Learning</h3>
+      <ul>
+        <li>Developed a deep learning-based image classification model to accurately detect and identify various plant diseases from leaf images.</li>
+        <li>Built the project using Python, TensorFlow/Keras, and OpenCV, with a focus on model optimization and interpretability.</li>
+      </ul>
+    </div>
+     <div class="project-card">
+      <h3>Citizen Journalism Platform</h3>
+      <ul>
+        <li>Designed and developed a web-based platform enabling individuals to report local news, events, and social issues in real time, promoting community-driven journalism.</li>
+        <li>Integrated authentication, role-based access control, and a responsive UI/UX to ensure secure and accessible content creation and viewing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
      <section class="contact" id="contact">
   <h2 class="heading">Contact <span>Me!</span></h2>
 
   <div class="contact-cards">
-    <!-- Email -->
+
     <div class="contact-card">
       <div class="icon"><i class="fas fa-envelope"></i></div>
       <h3>Email</h3>
@@ -118,7 +121,6 @@
       <a href="mailto:kakarlalakshmibhargavi66@gmail.com" class="card-btn">Send Email</a>
     </div>
 
-    <!-- LinkedIn -->
     <div class="contact-card">
       <div class="icon"><i class="fab fa-linkedin-in"></i></div>
       <h3>LinkedIn</h3>
@@ -126,7 +128,6 @@
       <a href="https://www.linkedin.com/in/klbchowdary/" target="_blank" class="card-btn">Connect</a>
     </div>
 
-    <!-- GitHub -->
     <div class="contact-card">
       <div class="icon"><i class="fab fa-github"></i></div>
       <h3>GitHub</h3>
@@ -134,7 +135,6 @@
       <a href="https://github.com/bhargavikakarla00183" target="_blank" class="card-btn">Follow</a>
     </div>
 
-    <!-- Instagram -->
     <div class="contact-card">
       <div class="icon"><i class="fab fa-instagram"></i></div>
       <h3>Instagram</h3>
@@ -143,7 +143,6 @@
     </div>
   </div>
 
-  <!-- Contact Form -->
   <form action="#">
     <div class="input-box">
       <input type="text" placeholder="Full Name" required />
@@ -157,43 +156,7 @@
     <button type="submit" class="btn">Send Message</button>
   </form>
 </section>
-    <!-- <section id="contact" class="contact">
-        <h1 class="heading">Contact <span> Me!</span></h1>
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea cols="30" rows="7" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box">
-                <button class="btn" type="submit">Submit</button>
-            </div>
-        </form>
-    </section> -->
-
-    <!-- Footer Design -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2025 by Bhargavi | All Rights Reserved.</p>
