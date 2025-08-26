@@ -252,7 +252,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: floatUpDown 3s ease-in-out infinite; /* 🟢 animation here */
+    animation: floatUpDown 3s ease-in-out infinite; 
 }
 
 .profile {
