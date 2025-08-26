@@ -8,7 +8,6 @@ document.getElementById("pAddress").innerHTML = homeProperties.address;
 document.getElementById("pCity").innerHTML = homeProperties.city;
 document.getElementById("pState").innerHTML = homeProperties.state;
 
-
 /**
  * Save Book Details y
  * Used for a click event .
