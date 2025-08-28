@@ -40,7 +40,6 @@ function saveCourse() {
     debugger;
     courses.courseName = "Fullstack";
     courses.courseDesc = "Fullstack desc";
-    
     alert(JSON.stringify(courses))
 
 }
