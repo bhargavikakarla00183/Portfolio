@@ -42,7 +42,6 @@ form input[type="submit"]{
     outline:none;
     transition: background-color .3s ease;
 }
-
 form input[type="submit"]:hover{
     background-color: #0062cc;  
 }
@@ -53,7 +52,6 @@ form input[type="submit"]:hover{
     background-size: contain;
     background-position: center center;
 }
-
 .temperature {
     font-size: 48px;
     font-weight: bold;
