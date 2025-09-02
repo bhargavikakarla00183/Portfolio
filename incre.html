@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">-</p>
+    <button type="button" id="b1" >Increment</button>
+     <button type="button" id="b2" >Decrement</button>
+      <button type="button" id="b3">Clear</button>
+      <p id="sample"></p>
+      <script>
+        let x;
+        const b1 = document.getElementById("b1");
+        
+        // para.addlistener("click", () =>{
+        //  x++;
+        // })
+        b1.addEventlistener("click", () =>{
+         x++;
+         document.getElementById("para").innerHTML=x;
+        })
+
+         b2.addEventlistener("click", () =>{
+         x--;
+        })
+
+         b3.addEventlistener("click", () =>{
+         
+        })
+       
+      </script>
+</body>
+</html>

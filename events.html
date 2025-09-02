@@ -6,11 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+     <h1>Java Script validation</h1>
     <input type="text" id="num">
     <button type="button" onclick="myfunction()">Submit</button>
+   
+    <p id="demo"></p>
     <script>
      function myfunction() {
-        
+        let x = document.getElementById("num").value;
+        let text;
+        if(isNaN(x) || x < 1 || x > 10){
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("demo").innerHTML = text;
      }
     </script>
 </body>
