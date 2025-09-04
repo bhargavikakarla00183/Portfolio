@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        iframe{
+            filter: invert(100%);
+        }
+    </style> -->
+</head>
+<body>
+    <p id = "demo"></p>
+    <h1>Google Map </h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.5164624146137!2d79.99575387573955!3d14.455007380623355!2m3!1f0!2f0
+    !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8db11f34f961%3A0x806f1b6e3f9e9ee3!2sSri%20Sai%20Balaji%20Elite%20Apartments!5e0!3m2!1se
+    n!2sin!4v1756979132196!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+     const text='{"stud1":"Bhargavi", "birth1": "2003-10-30", "stud3":"Navya", "birth":"2002-11-11"}';
+    //  const str = JSON.parse(text);
+    // str.birth1 = new Date(str.birth1);
+    // document.getElementById("demo").innerHTML= str.stud1 + " is born on" + str.birth1;
+    const str = JSON.parse(text, function(key, value)
+    {
+        if(key == "birth1"){
+            return new Date(value);
+        }else{
+            return value;
+        }
+    }) ;
+    document.getElementById("demo").innerHTML= str.stud1 + " is born on" + str.birth1;
+
+    </script>
+</body>
+</html>
